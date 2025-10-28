@@ -19,7 +19,46 @@ for episode in eposides:
 
 
 
-
+'''
+TODO: 把libero数据集处理成经典llm微调的格式,任意时刻t0应该对应于字符串输入:
+message: [
+    {
+        "role": "system",
+        "content": [
+            {
+                "type": "text",
+                "text": SYSTEM_PROMPT
+            }
+        ]
+    },
+    {
+        "role": "user",
+        "content": [
+            {
+                "type": "image",
+                "image": main_image_files
+            },
+            {
+                "type": "image",
+                "image": gripper_image_files
+            },
+            {
+                "type": "text",
+                "text": task_instruction
+            }
+        ]
+    },
+    {
+        "role": "assistant",
+        "content": [
+            {
+                "type": "text",
+                "text": action_files(H*D个范围在[0,B]的整数，归一化得到)
+            }
+        ]
+    }
+]
+'''
 
 class LiberoVLA0(Dataset):
     def __init__(self, eposide_path: pathlib.Path):
