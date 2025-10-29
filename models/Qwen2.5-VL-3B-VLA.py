@@ -8,7 +8,7 @@ class Qwen2_5_VL_3B_VLA(Qwen2_5_VLForConditionalGeneration):
     def __init__(self):
         super().__init__()
 
-    def process_vla_input(self,message:str):
+    def transform_input(self, message:str, action_mask_ratio:float = 0.0):
         '''
         将string的message输入转为token，以及配套的atten mask 和label
         并且针对vla-0实现action的随机遮掩
