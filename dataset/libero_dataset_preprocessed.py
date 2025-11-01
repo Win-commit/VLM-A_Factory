@@ -220,11 +220,11 @@ class LiberoVLA0Preprocessed(Dataset):
                 "content": [
                     {
                         "type": "image",
-                        "image": sample['main_image_path']
+                        "image": f"file://{sample['main_image_path']}"
                     },
                     {
                         "type": "image",
-                        "image": sample['gripper_image_path']
+                        "image": f"file://{sample['gripper_image_path']}"
                     },
                     {
                         "type": "text",

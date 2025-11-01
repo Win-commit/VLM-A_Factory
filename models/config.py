@@ -4,4 +4,5 @@ Qwen2_5_VL_3B_VLA_CONFIG = {
     "torch_dtype":torch.bfloat16,
     "attn_implementation":"flash_attention_2",
     "device_map":"auto",
+    "local_files_only":True,
 }
