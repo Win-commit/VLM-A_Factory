@@ -196,7 +196,7 @@ class LiberoVLA0Preprocessed(Dataset):
     
     def __getitem__(self, idx: int) -> Dict[str, Any]:
         sample = self.samples[idx]
-        
+
         # 格式化系统提示
         system_prompt = SYSTEM_PROMPT.format(
             H=self.horizon,
@@ -243,11 +243,8 @@ class LiberoVLA0Preprocessed(Dataset):
             }
         ]
         
-        return {
-            'messages': messages,
-            'episode_idx': sample['episode_idx'],
-            'timestep': sample['timestep']
-        }
+
+        return messages
 
 
 class ActionNormalizer:
@@ -306,11 +303,11 @@ if __name__ == "__main__":
         horizon=8,
         action_dim=7,
         num_bins=1000,
-        preprocess_cache_path="/liujinxin/zhy/lirunze/vla-0/dataset/libero_preprocessed.pkl"
+        preprocess_cache_path="/liujinxin/zhy/lirunze/vla-0/dataset/libero/libero_preprocessed_8horizon_1000bins.pkl"
     )
     
     print(f"\n数据集大小: {len(dataset)}")
-    print(f"第一个样本: {dataset[0]['messages'][2]['content'][0]['text'][:50]}...")
+    print(f"第一个样本: {dataset[0][2]['content'][0]['text'][:50]}...")
     
     # # 后续运行
     # dataset2 = LiberoVLA0Preprocessed(
