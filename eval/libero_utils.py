@@ -1,7 +1,6 @@
 import sys
 sys.path.append("/liujinxin/code/lhc/lerobot/")
 sys.path.append("/liujinxin/code/lhc/lerobot/LIBERO/")
-from libero.libero import benchmark
 from libero.libero import get_libero_path
 from libero.libero.envs import OffScreenRenderEnv
 import os
@@ -26,6 +25,19 @@ def log_message(message: str, log_file=None):
     if log_file:
         log_file.write(message + "\n")
         log_file.flush()
+
+def setup_logging(cfg):
+    """设置日志记录"""
+    ckpt_id = cfg.pretrained_checkpoint.split('-')[-1] if '-' in cfg.pretrained_checkpoint else "custom"
+    run_id = f"VLA0-EVAL-{cfg.task_suite_name}-{DATE_TIME}-{ckpt_id}"
+
+    
+    os.makedirs(cfg.local_log_dir, exist_ok=True)
+    local_log_filepath = os.path.join(cfg.local_log_dir, run_id + ".txt")
+    log_file = open(local_log_filepath, "w")
+    logger.info(f"Logging to a file: {local_log_filepath}")
+    
+    return log_file, local_log_filepath
 
 
 def get_libero_env(task, resolution=256):

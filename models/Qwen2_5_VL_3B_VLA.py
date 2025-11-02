@@ -82,8 +82,9 @@ class Qwen2_5_VL_3B_VLA:
             local_files_only=True,
             device_map="auto"
         )
+        #Tmp:存model的时候忘存tokenizer了，不过无所谓，先暂时用着
         self.processor = AutoProcessor.from_pretrained(
-            pretrained_model_name_or_path = model_path,
+            pretrained_model_name_or_path = "/liujinxin/zhy/lirunze/vla-0/pretrain/Qwen2.5-VL-3B-Instruct",
             trust_remote_code=True
         )
         self.action_unnormalizer = ActionUnnormalizer(stats_path=action_norm_stats_path)
@@ -140,12 +141,20 @@ class Qwen2_5_VL_3B_VLA:
             allowed.append(int(eos_id))
         else:
             raise ValueError("EOS token ID is not set")
-        print(f"allowed token IDs: {allowed}")
+            
 
         return sorted(set(allowed))
 
 
     def generate_actions(self, task_instruction:str, main_image: str, gripper_image: str) -> np.ndarray:
+        '''
+        Args:
+            task_instruction: str, the instruction of the task
+            main_image: str, the base64 encoded main image of the task
+            gripper_image: str, the base64 encoded gripper image of the task
+        Returns:
+            np.ndarray, the predicted actions
+        '''
         messages = self._build_messages(task_instruction, main_image, gripper_image)
         text = self.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
         image_inputs, video_inputs = process_vision_info(messages)
@@ -165,11 +174,12 @@ class Qwen2_5_VL_3B_VLA:
         generated_ids = self.model.generate(
             **inputs,
             max_new_tokens=self.action_unnormalizer.horizon * self.action_unnormalizer.action_dim * 10,
-            logits_processor=logits_processor
+            logits_processor=logits_processor,
+            do_sample=False  # Using Greedy Sampling
         )
+
         generated_ids_trimmed = [out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)]
         output_text = self.processor.batch_decode(generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False)
-        #TODO action unnormalization
+        predicted_actions = self.action_unnormalizer.parse_prediction_string(output_text[0])
 
-        
-        return output_text
+        return predicted_actions
