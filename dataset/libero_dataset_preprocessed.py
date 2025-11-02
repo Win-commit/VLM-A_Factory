@@ -247,53 +247,6 @@ class LiberoVLA0Preprocessed(Dataset):
         return messages
 
 
-class ActionNormalizer:
-    """用于推理时的动作反归一化工具类"""
-    
-    def __init__(self, stats_path: str = None, stats_dict: Dict[str, Any] = None):
-        if stats_path is not None:
-            stats = ActionNormalizer.load_normalization_stats(stats_path)
-        elif stats_dict is not None:
-            stats = stats_dict
-        else:
-            raise ValueError("必须提供 stats_path 或 stats_dict 之一")
-        
-        self.action_min = stats['action_min']
-        self.action_max = stats['action_max']
-        self.action_range = stats['action_range']
-        self.action_dim = stats['action_dim']
-        self.num_bins = stats['num_bins']
-        self.horizon = stats['horizon']
-    
-    @staticmethod
-    def load_normalization_stats(load_path: str) -> Dict[str, Any]:
-        with open(load_path, 'r') as f:
-            stats = json.load(f)
-        
-        stats['action_min'] = np.array(stats['action_min'])
-        stats['action_max'] = np.array(stats['action_max'])
-        stats['action_range'] = np.array(stats['action_range'])
-        
-        return stats
-    
-    def unnormalize(self, discretized_action: np.ndarray) -> np.ndarray:
-        discretized_action = np.array(discretized_action)
-        original_shape = discretized_action.shape
-        
-        normalized = discretized_action / (self.num_bins - 1)
-        continuous_action = normalized * self.action_range + self.action_min
-        
-        return continuous_action.reshape(original_shape)
-    
-    def parse_prediction_string(self, pred_str: str) -> np.ndarray:
-        tokens = pred_str.strip().split()
-        discretized = np.array([int(t) for t in tokens])
-        
-        assert len(discretized) == self.horizon * self.action_dim, f"预测长度不匹配: 期望 {self.horizon * self.action_dim}, 实际 {len(discretized)}"
-       
-        discretized = discretized.reshape(self.horizon, self.action_dim)
-        return self.unnormalize(discretized)
-
 
 if __name__ == "__main__":
     print("创建预处理数据集...")

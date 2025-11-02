@@ -4,3 +4,4 @@ dataset/libero/
 .vscode/
 scripts/
 wandb/
+logs/
