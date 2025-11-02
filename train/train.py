@@ -142,7 +142,6 @@ def main():
         action_dim=data_args.action_dim,
         num_bins=data_args.num_bins
     )
-    print(len(train_dataset))
     
     
     # 创建数据收集器
