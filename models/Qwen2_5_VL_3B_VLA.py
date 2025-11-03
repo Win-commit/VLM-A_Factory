@@ -25,7 +25,7 @@ class ActionConstraintLogitsProcessor(LogitsProcessor):
 
 class ActionUnnormalizer:
     """Inverse normalization tools for actions in inference"""
-    def __init__(self, stats_path: str = None, stats_dict: Dict[str, Any] = None):
+    def __init__(self, stats_path: Optional[str] = None, stats_dict: Optional[Dict[str, Any]] = None):
         if stats_path is not None:
             stats = ActionUnnormalizer.load_normalization_stats(stats_path)
         elif stats_dict is not None:
@@ -82,6 +82,7 @@ class Qwen2_5_VL_3B_VLA:
             local_files_only=True,
             device_map="auto"
         )
+        self.model.eval()
         #Tmp:存model的时候忘存tokenizer了，不过无所谓，先暂时用着
         self.processor = AutoProcessor.from_pretrained(
             pretrained_model_name_or_path = "/liujinxin/zhy/lirunze/vla-0/pretrain/Qwen2.5-VL-3B-Instruct",

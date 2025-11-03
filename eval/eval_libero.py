@@ -1,9 +1,7 @@
 import os
 # os.environ["MUJOCO_GL"] = "egl"
 import torch
-import pickle
 import numpy as np
-from time import time
 import sys
 sys.path.append("/liujinxin/zhy/lirunze/vla-0/models")
 sys.path.append("/liujinxin/code/lhc/lerobot/")
@@ -11,14 +9,8 @@ sys.path.append("/liujinxin/code/lhc/lerobot/LIBERO/")
 from libero.libero import benchmark
 from Qwen2_5_VL_3B_VLA import Qwen2_5_VL_3B_VLA
 from PIL import Image
-from torch.nn.functional import cross_entropy
-from random import shuffle
-import random
-import time
 from dataclasses import dataclass
 from enum import Enum
-from pathlib import Path
-from typing import Optional, Union, List
 from collections import deque
 import tqdm
 import argparse
@@ -150,7 +142,6 @@ def eval_libero(cfg: EvaluationConfig) -> float:
     log_message(f"Loading model from {cfg.model_path}...", None)
     
     model = Qwen2_5_VL_3B_VLA(model_path=cfg.model_path, action_norm_stats_path=cfg.action_norm_stats_path)
-    model.eval()
     
     log_file, _ = setup_logging(cfg)
     
@@ -231,7 +222,7 @@ def run_task(cfg: EvaluationConfig, model: Qwen2_5_VL_3B_VLA, task_suite, task_i
             save_rollout_video(
                 replay_images, total_episodes, success=success, 
                 task_description=task_description, log_file=log_file,
-                output_dir=os.path.join(cfg.local_log_dir, "videos", cfg.pretrained_checkpoint.split("/")[-1])
+                output_dir=os.path.join(cfg.local_log_dir, "videos", cfg.model_path.split("/")[-1])
             )
         
         # 记录结果
@@ -332,3 +323,5 @@ def prepare_observation(obs, resize_size):
 
 if __name__ == "__main__":
     config = parse_args_and_create_config()
+    logging.info(f"Config: {config}")
+    eval_libero(config)
