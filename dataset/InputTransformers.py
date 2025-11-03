@@ -76,7 +76,6 @@ class InputTransformers():
             inputs = labels_inputs
         
         for idx, original_msgs in enumerate(original_messages_list):
-            # 移除assistant消息
             msgs_without_assistant = [msg for msg in original_msgs if msg['role'] != 'assistant']
             
             text_without_assistant = processor.apply_chat_template(
@@ -119,9 +118,7 @@ class InputTransformers():
                                         chars = list(original_text)
                                         
                                         for idx in mask_indices:
-                                            original_digit = int(chars[idx])
-                                            other_digits = [d for d in range(10) if d != original_digit]
-                                            chars[idx] = str(random.choice(other_digits))
+                                            chars[idx] = '？'
                                         
                                         content_item['text'] = ''.join(chars)
             return msg_list

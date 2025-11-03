@@ -287,6 +287,7 @@ def run_episode(cfg: EvaluationConfig, env, task_description, model, initial_sta
             
             action = action_queue.popleft()
         
+        print("generating actions...")
         
         obs, reward, done, info = env.step(action.tolist())
         if done:

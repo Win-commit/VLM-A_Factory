@@ -182,5 +182,5 @@ class Qwen2_5_VL_3B_VLA:
         generated_ids_trimmed = [out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)]
         output_text = self.processor.batch_decode(generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False)
         predicted_actions = self.action_unnormalizer.parse_prediction_string(output_text[0])
-
+        
         return predicted_actions

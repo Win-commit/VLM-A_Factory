@@ -1,4 +1,489 @@
-使用动作平均策略 (Temporal Ensembling) - horizon=8
+Using traditional action queuing strategies - open_loop_steps=8
 
 Task: pick up the black bowl between the plate and the ramekin and place it on the plate
 Start episode 1...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=1--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 1
+Total number of successes so far: 1 (100.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 2...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=2--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 2
+Total number of successes so far: 2 (100.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 3...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=3--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 3
+Total number of successes so far: 2 (66.7%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 4...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=4--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 4
+Total number of successes so far: 3 (75.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 5...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=5--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 5
+Total number of successes so far: 4 (80.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 6...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=6--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 6
+Total number of successes so far: 4 (66.7%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 7...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=7--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 7
+Total number of successes so far: 5 (71.4%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 8...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=8--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 8
+Total number of successes so far: 6 (75.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 9...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=9--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 9
+Total number of successes so far: 7 (77.8%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 10...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=10--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 10
+Total number of successes so far: 7 (70.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 11...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=11--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 11
+Total number of successes so far: 7 (63.6%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 12...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=12--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 12
+Total number of successes so far: 8 (66.7%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 13...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=13--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 13
+Total number of successes so far: 9 (69.2%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 14...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=14--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 14
+Total number of successes so far: 9 (64.3%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 15...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=15--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 15
+Total number of successes so far: 10 (66.7%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 16...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=16--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 16
+Total number of successes so far: 11 (68.8%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 17...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=17--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 17
+Total number of successes so far: 12 (70.6%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 18...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=18--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 18
+Total number of successes so far: 13 (72.2%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 19...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=19--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 19
+Total number of successes so far: 14 (73.7%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 20...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=20--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 20
+Total number of successes so far: 14 (70.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 21...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=21--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 21
+Total number of successes so far: 15 (71.4%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 22...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=22--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 22
+Total number of successes so far: 16 (72.7%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 23...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=23--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 23
+Total number of successes so far: 17 (73.9%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 24...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=24--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 24
+Total number of successes so far: 17 (70.8%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 25...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=25--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 25
+Total number of successes so far: 18 (72.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 26...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=26--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 26
+Total number of successes so far: 19 (73.1%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 27...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=27--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 27
+Total number of successes so far: 20 (74.1%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 28...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=28--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 28
+Total number of successes so far: 21 (75.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 29...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=29--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 29
+Total number of successes so far: 22 (75.9%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 30...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=30--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 30
+Total number of successes so far: 23 (76.7%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 31...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=31--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 31
+Total number of successes so far: 24 (77.4%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 32...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=32--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 32
+Total number of successes so far: 25 (78.1%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 33...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=33--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 33
+Total number of successes so far: 26 (78.8%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 34...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=34--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 34
+Total number of successes so far: 27 (79.4%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 35...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=35--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 35
+Total number of successes so far: 27 (77.1%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 36...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=36--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 36
+Total number of successes so far: 28 (77.8%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 37...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=37--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 37
+Total number of successes so far: 28 (75.7%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 38...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=38--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 38
+Total number of successes so far: 28 (73.7%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 39...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=39--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 39
+Total number of successes so far: 29 (74.4%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 40...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=40--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 40
+Total number of successes so far: 29 (72.5%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 41...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=41--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 41
+Total number of successes so far: 30 (73.2%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 42...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=42--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 42
+Total number of successes so far: 31 (73.8%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 43...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=43--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 43
+Total number of successes so far: 32 (74.4%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 44...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=44--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 44
+Total number of successes so far: 33 (75.0%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 45...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=45--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 45
+Total number of successes so far: 34 (75.6%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 46...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=46--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 46
+Total number of successes so far: 35 (76.1%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 47...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=47--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 47
+Total number of successes so far: 36 (76.6%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 48...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=48--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 48
+Total number of successes so far: 37 (77.1%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 49...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=49--success=False--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: False
+Total number of episodes completed: 49
+Total number of successes so far: 37 (75.5%)
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 50...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=50--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+successes: True
+Total number of episodes completed: 50
+Total number of successes so far: 38 (76.0%)
+Task success rate: 0.76
+Total success rate so far: 0.76
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 1...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=51--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 51
+Total number of successes so far: 39 (76.5%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 2...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=52--success=False--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: False
+Total number of episodes completed: 52
+Total number of successes so far: 39 (75.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 3...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=53--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 53
+Total number of successes so far: 40 (75.5%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 4...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=54--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 54
+Total number of successes so far: 41 (75.9%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 5...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=55--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 55
+Total number of successes so far: 42 (76.4%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 6...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=56--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 56
+Total number of successes so far: 43 (76.8%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 7...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=57--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 57
+Total number of successes so far: 44 (77.2%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 8...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=58--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 58
+Total number of successes so far: 45 (77.6%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 9...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=59--success=False--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: False
+Total number of episodes completed: 59
+Total number of successes so far: 45 (76.3%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 10...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=60--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 60
+Total number of successes so far: 46 (76.7%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 11...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=61--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 61
+Total number of successes so far: 47 (77.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 12...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=62--success=False--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: False
+Total number of episodes completed: 62
+Total number of successes so far: 47 (75.8%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 13...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=63--success=False--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: False
+Total number of episodes completed: 63
+Total number of successes so far: 47 (74.6%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 14...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=64--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 64
+Total number of successes so far: 48 (75.0%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 15...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=65--success=False--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: False
+Total number of episodes completed: 65
+Total number of successes so far: 48 (73.8%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 16...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=66--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 66
+Total number of successes so far: 49 (74.2%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 17...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=67--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 67
+Total number of successes so far: 50 (74.6%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 18...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=68--success=False--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: False
+Total number of episodes completed: 68
+Total number of successes so far: 50 (73.5%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 19...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=69--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+successes: True
+Total number of episodes completed: 69
+Total number of successes so far: 51 (73.9%)
+
+Task: pick up the black bowl next to the ramekin and place it on the plate
+Start episode 20...

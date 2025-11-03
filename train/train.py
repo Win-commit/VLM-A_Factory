@@ -144,7 +144,6 @@ def main():
     )
     
     
-    # 创建数据收集器
     data_collator = VLADataCollator(
         processor=processor,
         action_mask_ratio=data_args.action_mask_ratio

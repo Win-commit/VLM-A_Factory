@@ -51,7 +51,6 @@ class LiberoVLA0Preprocessed(Dataset):
                 self._save_to_cache(preprocess_cache_path)
     
     def _preprocess_data(self, data_path: pathlib.Path, max_episodes: Optional[int]):
-        """预处理所有数据"""
         episodes_meta = []
         episode_dirs = sorted(list(data_path.glob('*/')))
         
@@ -121,10 +120,10 @@ class LiberoVLA0Preprocessed(Dataset):
                     discretized = self._normalize_action(action)
                     future_actions.extend(discretized)
                 
-                # 转换为字符串
+
                 action_str = ' '.join(map(str, future_actions))
                 
-                # 构建消息
+
                 sample = {
                     'main_image_path': main_img,
                     'gripper_image_path': gripper_img,

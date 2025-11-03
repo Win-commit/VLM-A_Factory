@@ -5,3 +5,4 @@ dataset/libero/
 scripts/
 wandb/
 logs/
+eval_logs/
