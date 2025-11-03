@@ -1,0 +1,4 @@
+使用动作平均策略 (Temporal Ensembling) - horizon=8
+
+Task: open the middle drawer of the cabinet
+Start episode 1...

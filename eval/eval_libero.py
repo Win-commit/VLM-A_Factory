@@ -147,9 +147,9 @@ def eval_libero(cfg: EvaluationConfig) -> float:
     
     # 记录动作平均策略的使用情况
     if cfg.use_action_ensembling:
-        log_message(f"使用动作平均策略 (Temporal Ensembling) - horizon={NUM_ACTIONS_CHUNK}", log_file)
+        log_message(f"Using an action averaging strategy (Temporal Ensembling) - horizon={NUM_ACTIONS_CHUNK}", log_file)
     else:
-        log_message(f"使用传统动作队列策略 - open_loop_steps={cfg.num_open_loop_steps}", log_file)
+        log_message(f"Using traditional action queuing strategies - open_loop_steps={cfg.num_open_loop_steps}", log_file)
     
     benchmark_dict = benchmark.get_benchmark_dict()
     task_suite = benchmark_dict[cfg.task_suite_name]()

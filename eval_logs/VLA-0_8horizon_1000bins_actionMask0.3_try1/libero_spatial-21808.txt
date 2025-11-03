@@ -1,0 +1,4 @@
+使用动作平均策略 (Temporal Ensembling) - horizon=8
+
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+Start episode 1...

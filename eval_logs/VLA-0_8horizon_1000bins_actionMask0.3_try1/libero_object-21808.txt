@@ -1,0 +1,4 @@
+使用动作平均策略 (Temporal Ensembling) - horizon=8
+
+Task: pick up the alphabet soup and place it in the basket
+Start episode 1...

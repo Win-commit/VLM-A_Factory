@@ -28,7 +28,7 @@ def log_message(message: str, log_file=None):
 
 def setup_logging(cfg):
     """设置日志记录"""
-    ckpt_id = cfg.pretrained_checkpoint.split('-')[-1] if '-' in cfg.pretrained_checkpoint else "custom"
+    ckpt_id = cfg.model_path.split('-')[-1] if '-' in cfg.model_path else "custom"
     run_id = f"{cfg.task_suite_name}-{ckpt_id}"
 
     
