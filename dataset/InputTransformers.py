@@ -4,7 +4,7 @@ import copy
 import string
 from transformers import AutoProcessor
 from qwen_vl_utils import process_vision_info
-from typing import Dict, Optional, Union, List
+from typing import  Optional, List, Tuple
 
 
 
@@ -29,53 +29,31 @@ class InputTransformers():
 
         is_batch = isinstance(messages[0], list)
         
+
+        messages_masked = copy.deepcopy(messages)
+        messages_masked = InputTransformers.mask_actions(messages_masked, action_mask_ratio, is_batch=is_batch)
+        mask_token_id = processor.tokenizer.encode("？")[0]
         if not is_batch:
-            original_messages_list = [messages]
+            messages_masked_list = [messages_masked]
         else:
-            original_messages_list = messages
+            messages_masked_list = messages_masked
         
-        original_texts = [
+        masked_texts = [
             processor.apply_chat_template(msg, tokenize=False, add_generation_prompt=False)
-            for msg in original_messages_list
+            for msg in messages_masked_list
         ]
-        
-        image_inputs, video_inputs = process_vision_info(original_messages_list)
-        
-        labels_inputs = processor(
-            text=original_texts,
+        image_inputs, video_inputs = process_vision_info(messages_masked_list)
+
+        inputs = processor(
+            text=masked_texts,
             images=image_inputs,
             videos=video_inputs,
             padding=True,
             return_tensors="pt",
         )
-        labels = labels_inputs['input_ids'].clone()
+        labels = inputs['input_ids'].clone()
 
-        if action_mask_ratio > 0.0:
-            messages_masked = copy.deepcopy(messages)
-            messages_masked = InputTransformers.mask_actions(messages_masked, action_mask_ratio, is_batch=is_batch)
-            
-            if not is_batch:
-                messages_masked_list = [messages_masked]
-            else:
-                messages_masked_list = messages_masked
-            
-            masked_texts = [
-                processor.apply_chat_template(msg, tokenize=False, add_generation_prompt=False)
-                for msg in messages_masked_list
-            ]
-            
-            inputs = processor(
-                text=masked_texts,
-                images=image_inputs,
-                videos=video_inputs,
-                padding=True,
-                return_tensors="pt",
-            )
-
-        else:
-            inputs = labels_inputs
-        
-        for idx, original_msgs in enumerate(original_messages_list):
+        for idx, original_msgs in enumerate(messages_masked_list):
             msgs_without_assistant = [msg for msg in original_msgs if msg['role'] != 'assistant']
             
             text_without_assistant = processor.apply_chat_template(
@@ -94,7 +72,7 @@ class InputTransformers():
             labels[idx, :assistant_start_idx] = -100
         
         labels[inputs['attention_mask'] == 0] = -100
-        
+        labels[inputs['input_ids'] == mask_token_id] = -100
         inputs['labels'] = labels
     
         return inputs

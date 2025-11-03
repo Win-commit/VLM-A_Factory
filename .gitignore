@@ -2,7 +2,6 @@ test/
 pretrain/Qwen2.5-VL-3B-Instruct/
 dataset/libero/
 .vscode/
-scripts/
 wandb/
 logs/
 eval_logs/

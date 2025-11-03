@@ -233,3 +233,17 @@ Total number of successes so far: 0 (0.0%)
 
 Task: pick up the alphabet soup and place it in the basket
 Start episode 34...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=34--success=False--task=pick_up_the_alphabet_soup_and_place_it_in_the_bask.mp4
+successes: False
+Total number of episodes completed: 34
+Total number of successes so far: 0 (0.0%)
+
+Task: pick up the alphabet soup and place it in the basket
+Start episode 35...
+保存回放视频到路径 /liujinxin/zhy/lirunze/vla-0/eval_logs/VLA-0_8horizon_1000bins_actionMask0.3_try1/videos/checkpoint-21808/2025_11_03-11_31_02--unified--episode=35--success=False--task=pick_up_the_alphabet_soup_and_place_it_in_the_bask.mp4
+successes: False
+Total number of episodes completed: 35
+Total number of successes so far: 0 (0.0%)
+
+Task: pick up the alphabet soup and place it in the basket
+Start episode 36...
